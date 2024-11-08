@@ -1,6 +1,12 @@
+import { redirect } from "next/navigation";
 import NavBar from "../_components/navBar";
+import { auth } from "@clerk/nextjs/server";
 
-const SubscriptionPage = () => {
+const SubscriptionPage = async () => {
+  const { userId } = await auth();
+  if (!userId) {
+    redirect("/login");
+  }
   return (
     <>
       <NavBar />
