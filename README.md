@@ -1,4 +1,4 @@
-## 💸 Finance AI| Projeto para controle de finanças
+## 💸 Finance AI | Projeto para controle de finanças
 
 <div align=center>
 <img src="/public/logo.svg" />
