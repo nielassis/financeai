@@ -1,10 +1,9 @@
-## 💸 FinanceAI | Projeto para controle de finanças
+## 💸 | Projeto para controle de finanças
 
 <div align=center>
-<img src="/financeai/public/logo.svg" />
+<img src="/public/logo.svg" />
 </div>
-<div>
-FinanceAI é uma aplicação desenvolvida para auxiliar no controle de finanças pessoais, oferecendo funcionalidades para gerenciar transações, visualizar relatórios e obter insights financeiros de forma prática e intuitiva.
+<div> é uma aplicação desenvolvida para auxiliar no controle de finanças pessoais, oferecendo funcionalidades para gerenciar transações, visualizar relatórios e obter insights financeiros de forma prática e intuitiva.
 </div>
 
 <div align=center>
@@ -35,16 +34,16 @@ Muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais de ma
     <td align="center">Dashboard</td>
   </tr>
   <tr>
-    <td><img src="/financeai/public/readme/loginScreen.jpeg" width="300" /></td>
-    <td><img src="/financeai/public/readme/dashboardScreen.jpeg" width="300" /></td>
+    <td><img src="/public/readme/loginScreen.jpeg" width="300" /></td>
+    <td><img src="/public/readme/dashboardScreen.jpeg" width="300" /></td>
   </tr>
   <tr>
     <td align="center">Transações</td>
     <td align="center">Adicionar Transação</td>
   </tr>
   <tr>
-    <td><img src="/financeai/public/readme/transactionPageScreen.jpeg" width="300" /></td>
-    <td><img src="/financeai/public/readme/addTrasactionScreen.jpeg" width="300" /></td>
+    <td><img src="/public/readme/transactionPageScreen.jpeg" width="300" /></td>
+    <td><img src="/public/readme/addTrasactionScreen.jpeg" width="300" /></td>
   </tr>
 </table>
 
