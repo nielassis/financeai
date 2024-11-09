@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 💸 FinanceAI | Projeto para controle de finanças
 
-## Getting Started
+<div align=center>
+<img src="/financeai/public/logo.svg" />
+</div>
+<div>
+FinanceAI é uma aplicação desenvolvida para auxiliar no controle de finanças pessoais, oferecendo funcionalidades para gerenciar transações, visualizar relatórios e obter insights financeiros de forma prática e intuitiva.
+</div>
 
-First, run the development server:
+<div align=center>
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" />
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ✅ Visão Geral do Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais de maneira eficaz. A falta de visibilidade sobre gastos e receitas pode levar a problemas financeiros, como dívidas acumuladas e falta de poupança. O projeto FinanceAI surge como uma solução para essas questões, proporcionando uma ferramenta que ajuda os usuários a controlar suas finanças, oferecendo insights valiosos e permitindo decisões financeiras mais informadas e seguras.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔗 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [x] Conexão com Banco de Dados
+- [x] Autenticação e gerenciamento de usuários com clerk & Google auth
+- [x] Autenticação via e-mail e senha
+- [x] Gereciamento de transações
+- [x] Suporte a múltiplos usuários
+- [x] Vizualização de dados aprimorada com gráficos (ShadcnUI)
+- [ ] Integração com IA
+- [ ] Implementação de planos e assinatura com stripe
+- [ ] Deploy
 
-## Learn More
+### 💻 Screens
 
-To learn more about Next.js, take a look at the following resources:
+<table align="center">
+  <tr>
+    <td align="center">Login</td>
+    <td align="center">Dashboard</td>
+  </tr>
+  <tr>
+    <td><img src="/financeai/public/readme/loginScreen.jpeg" width="300" /></td>
+    <td><img src="/financeai/public/readme/dashboardScreen.jpeg" width="300" /></td>
+  </tr>
+  <tr>
+    <td align="center">Transações</td>
+    <td align="center">Adicionar Transação</td>
+  </tr>
+  <tr>
+    <td><img src="/financeai/public/readme/transactionPageScreen.jpeg" width="300" /></td>
+    <td><img src="/financeai/public/readme/addTrasactionScreen.jpeg" width="300" /></td>
+  </tr>
+</table>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tecnologias Utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div flex>
+  <ul>
+    <li><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=FFFFFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=000" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=PostgreSQL&logoColor=FFFFFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=Tailwind%20CSS&logoColor=FFFFFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=Prisma&logoColor=FFFFFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/ShadCNUI-000000?style=for-the-badge&logo=ShadCNUI&logoColor=FFFFFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=FFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=000" height="28"/></li>
+  </ul>
+</div>
