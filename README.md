@@ -34,16 +34,16 @@ Muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais de ma
     <td align="center">Dashboard</td>
   </tr>
   <tr>
-    <td><img src="/public/readme/loginScreen.jpeg" width="300" /></td>
-    <td><img src="/public/readme/dashboardScreen.jpeg" width="300" /></td>
+    <td><img src="./public/readme/loginScreen.jpeg" width="300" /></td>
+    <td><img src="./public/readme/dashboardScreen.jpeg" width="300" /></td>
   </tr>
   <tr>
     <td align="center">Transações</td>
     <td align="center">Adicionar Transação</td>
   </tr>
   <tr>
-    <td><img src="/public/readme/transactionPageScreen.jpeg" width="300" /></td>
-    <td><img src="/public/readme/addTrasactionScreen.jpeg" width="300" /></td>
+    <td><img src="./public/readme/transactionPageScreen.jpeg" width="300" /></td>
+    <td><img src="./public/readme/addTrasactionScreen.jpeg" width="300" /></td>
   </tr>
 </table>
 
