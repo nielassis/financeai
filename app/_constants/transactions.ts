@@ -19,7 +19,7 @@ export const TransactionCategoryLabels = {
 export const TransactionPaymentMethodLabels = {
   CASH: "Dinheiro",
   CREDIT_CARD: "Cartão de Crédito",
-  DEBIT_CARD: "Cartão de Díbito",
+  DEBIT_CARD: "Cartão de Débito",
   BANK_TRANSFER: "Transferência bancária",
   BANK_SLIP: "Boleto",
   PIX: "Pix",
