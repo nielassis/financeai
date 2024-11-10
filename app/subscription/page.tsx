@@ -1,16 +1,19 @@
 import { redirect } from "next/navigation";
 import NavBar from "../_components/navBar";
-import { auth } from "@clerk/nextjs/server";
+import { auth, clerkClient } from "@clerk/nextjs/server";
 import { Card, CardContent, CardHeader } from "../_components/ui/card";
 import { CheckIcon, XIcon } from "lucide-react";
 import { Button } from "../_components/ui/button";
 import AcquirePlanButton from "./_components/acquire-plan-btn";
+import { Badge } from "../_components/ui/badge";
 
 const SubscriptionPage = async () => {
   const { userId } = await auth();
   if (!userId) {
     redirect("/login");
   }
+  const user = await clerkClient().users.getUser(userId);
+  const HasProPlan = user?.publicMetadata.subscriptionPlan == "pro";
   return (
     <>
       <NavBar />
@@ -18,7 +21,12 @@ const SubscriptionPage = async () => {
         <h1 className="text-2xl font-bold">Assinaturas</h1>
         <div className="flex justify-center gap-6">
           <Card className="w-[450px]">
-            <CardHeader className="border-b border-solid py-8">
+            <CardHeader className="relative border-b border-solid py-8">
+              {!HasProPlan && (
+                <Badge className="absolute left-4 top-12 bg-primary/10 text-primary">
+                  Ativo
+                </Badge>
+              )}
               <h2 className="text-center text-2xl font-semibold">
                 Plano Básico
               </h2>
@@ -48,7 +56,12 @@ const SubscriptionPage = async () => {
           </Card>
 
           <Card className="w-[450px]">
-            <CardHeader className="border-b border-solid py-8">
+            <CardHeader className="relative border-b border-solid py-8">
+              {HasProPlan && (
+                <Badge className="absolute left-4 top-12 bg-primary/10 text-primary">
+                  Ativo
+                </Badge>
+              )}
               <h2 className="text-center text-2xl font-semibold">Plano Pro</h2>
               <div className="flex items-center justify-center gap-3">
                 <span className="text-4xl">R$</span>
