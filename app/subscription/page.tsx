@@ -15,6 +15,3 @@ const SubscriptionPage = async () => {
 };
 
 export default SubscriptionPage;
-<>
-  <NavBar />
-</>;
