@@ -1,7 +1,7 @@
 ## 💸 Finance AI | Projeto para controle de finanças
 
 <div align=center>
-<img src="/public/logo.svg" />
+<img src="./public/logo.svg" />
 </div>
 <div> é uma aplicação desenvolvida para auxiliar no controle de finanças pessoais, oferecendo funcionalidades para gerenciar transações, visualizar relatórios e obter insights financeiros de forma prática e intuitiva.
 </div>
