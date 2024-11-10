@@ -4,7 +4,6 @@ import { auth } from "@clerk/nextjs/server";
 import { Card, CardContent, CardHeader } from "../_components/ui/card";
 import { CheckIcon, XIcon } from "lucide-react";
 import { Button } from "../_components/ui/button";
-import AcquirePlanButton from "./_components/acquire-plan-btn";
 
 const SubscriptionPage = async () => {
   const { userId } = await auth();
@@ -65,7 +64,9 @@ const SubscriptionPage = async () => {
                 <CheckIcon className="text-primary" />
                 <p>Relatórios de IA ilimitados</p>
               </div>
-              <AcquirePlanButton />
+              <Button className="w-full rounded-full font-bold text-white">
+                Adiquirir plano
+              </Button>
             </CardContent>
           </Card>
         </div>

@@ -58,6 +58,7 @@ Muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais de ma
     <li><img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=Prisma&logoColor=FFFFFF" height="28"/></li>
     <li><img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" height="28"/></li>
     <li><img src="https://img.shields.io/badge/ShadCNUI-000000?style=for-the-badge&logo=ShadCNUI&logoColor=FFFFFF" height="28"/></li>
+    <li><img src="https://img.shields.io/badge/Stripe-6c5ce7?style=for-the-badge&logo=Stripe&logoColor=FFFFFF" height="28"/></li>
     <li><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=FFF" height="28"/></li>
     <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=000" height="28"/></li>
   </ul>
