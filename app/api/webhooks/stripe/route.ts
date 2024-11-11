@@ -14,13 +14,13 @@ export const POST = async (request: Request) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2024-10-28.acacia",
   });
-  if (!process.env.STRIPE_WEEBHOOK_SECRET) {
+  if (!process.env.STRIPE_WEBHOOK_SECRET) {
     return NextResponse.error();
   }
   const event = stripe.webhooks.constructEvent(
     text,
     signature,
-    process.env.STRIPE_WEEBHOOK_SECRET,
+    process.env.STRIPE_WEBHOOK_SECRET,
   );
   switch (event.type) {
     case "invoice.paid": {
