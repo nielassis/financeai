@@ -21,10 +21,10 @@ const PageState = async () => {
           </p>
           <div className="flex w-full items-center justify-center gap-3 pt-6">
             <Link href="/subscription">
-              <Button className="font-bold">Fazer Upgrade!</Button>
+              <Button className="w-[200px] font-bold">Fazer Upgrade!</Button>
             </Link>
             <Link href="/">
-              <Button variant="outline" className="font-bold">
+              <Button variant="outline" className="w-[200px] font-bold">
                 Voltar ao dashboard
               </Button>
             </Link>
