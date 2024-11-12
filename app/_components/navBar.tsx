@@ -32,16 +32,6 @@ const NavBar = () => {
           Transações
         </Link>
         <Link
-          href="/subscription"
-          className={
-            pathname === "/subscription"
-              ? "font-bold text-primary"
-              : "text-muted-foreground"
-          }
-        >
-          Assinatura
-        </Link>
-        <Link
           href="/reports"
           className={
             pathname === "/reports"
@@ -50,6 +40,16 @@ const NavBar = () => {
           }
         >
           Relatórios
+        </Link>
+        <Link
+          href="/subscription"
+          className={
+            pathname === "/subscription"
+              ? "font-bold text-primary"
+              : "text-muted-foreground"
+          }
+        >
+          Assinatura
         </Link>
       </div>
       <div className="">
