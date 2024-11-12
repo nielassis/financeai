@@ -8,6 +8,7 @@ import TransactionsPieChart from "./_components/transactions-pie-chart";
 import { GetDashBoard } from "../_data/get-dashboard";
 import ExpensesPerCategory from "./_components/expenses-per-category";
 import LastTransactions from "./_components/last-transactions";
+import AIReportsButton from "./_components/ai-reports-button";
 
 interface HomeProps {
   searchParams: {
@@ -31,7 +32,10 @@ const Home = async ({ searchParams: { month } }: HomeProps) => {
       <div className="flex flex-col space-y-6 overflow-hidden p-6">
         <div className="flex justify-between">
           <h1 className="text-2xl font-bold">Dashboard</h1>
-          <TimeSelect />
+          <div className="flex gap-3">
+            <AIReportsButton month="" />
+            <TimeSelect />
+          </div>
         </div>
         <div className="grid grid-cols-[2fr,1fr] gap-6 overflow-hidden">
           <div className="flex flex-col gap-6 overflow-hidden">

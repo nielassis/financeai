@@ -41,6 +41,16 @@ const NavBar = () => {
         >
           Assinatura
         </Link>
+        <Link
+          href="/reports"
+          className={
+            pathname === "/reports"
+              ? "font-bold text-primary"
+              : "text-muted-foreground"
+          }
+        >
+          Relatórios
+        </Link>
       </div>
       <div className="">
         <UserButton showName />
