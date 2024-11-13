@@ -41,7 +41,7 @@ const PageState = async () => {
             corrigir o mais rapido possível.
           </p>
           <div className="flex w-full items-center justify-center gap-3 pt-6">
-            <Link href="/dashboard">
+            <Link href="/">
               <Button className="font-bold" variant="ghost">
                 Ir para o Dashboard
               </Button>
