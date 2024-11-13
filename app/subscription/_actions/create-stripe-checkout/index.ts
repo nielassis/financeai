@@ -23,8 +23,8 @@ const createStripeCheckout = async () => {
         quantity: 1,
       },
     ],
-    success_url: "http://localhost:3000/subscription",
-    cancel_url: "http://localhost:3000/subscription",
+    success_url: process.env.APP_URL,
+    cancel_url: process.env.APP_URL,
     subscription_data: {
       metadata: {
         clerk_user_id: userId,
