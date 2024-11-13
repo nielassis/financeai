@@ -44,7 +44,7 @@ const AIReportsButton = ({ month }: AIReportsButtonProps) => {
           </div>
         </DialogHeader>
         <DialogFooter>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full justify-center gap-3">
             <DialogClose asChild>
               <Button variant="ghost">Cancelar</Button>
             </DialogClose>
