@@ -7,21 +7,23 @@ import { Button } from "../_components/ui/button";
 import AcquirePlanButton from "./_components/acquire-plan-btn";
 import { Badge } from "../_components/ui/badge";
 import { getCurrentMonthTransactions } from "../_data/get-current-month-transactions";
+
 const SubscriptionPage = async () => {
   const { userId } = await auth();
   if (!userId) {
     redirect("/login");
   }
-  const user = await clerkClient().users.getUser(userId);
+  const user = await clerkClient.users.getUser(userId);
   const HasProPlan = user?.publicMetadata.subscriptionPlan == "pro";
   const CurrentMonthTransactions = await getCurrentMonthTransactions();
+
   return (
     <>
       <NavBar />
       <div className="space-y-6 p-6">
         <h1 className="text-2xl font-bold">Assinaturas</h1>
-        <div className="flex justify-center gap-6">
-          <Card className="w-[450px]">
+        <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
+          <Card className="w-full max-w-xs sm:max-w-sm lg:w-[450px]">
             <CardHeader className="relative border-b border-solid py-8">
               {!HasProPlan && (
                 <Badge className="absolute left-4 top-12 bg-primary/10 text-primary">
@@ -62,7 +64,7 @@ const SubscriptionPage = async () => {
             </CardContent>
           </Card>
 
-          <Card className="w-[450px]">
+          <Card className="w-full max-w-xs sm:max-w-sm lg:w-[450px]">
             <CardHeader className="relative border-b border-solid py-8">
               {HasProPlan && (
                 <Badge className="absolute left-4 top-12 bg-primary/10 text-primary">

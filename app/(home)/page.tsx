@@ -26,21 +26,22 @@ const Home = async ({ searchParams: { month } }: HomeProps) => {
     redirect(`?month=${new Date().getMonth() + 1}`);
   }
   const dashboard = await GetDashBoard(month);
+
   return (
     <>
       <Navbar />
       <div className="flex flex-col space-y-6 overflow-hidden p-6">
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold">Dashboard</h1>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap justify-end gap-3">
             <AIReportsButton month="" />
             <TimeSelect />
           </div>
         </div>
-        <div className="grid grid-cols-[2fr,1fr] gap-6 overflow-hidden">
+        <div className="grid grid-cols-1 gap-6 overflow-hidden md:grid-cols-[2fr,1fr]">
           <div className="flex flex-col gap-6 overflow-hidden">
             <SummaryCards month={month} {...dashboard} />
-            <div className="grid grid-cols-3 grid-rows-1 gap-6 overflow-hidden">
+            <div className="grid grid-cols-1 gap-6 overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
               <TransactionsPieChart {...dashboard} />
               <ExpensesPerCategory
                 expensesPerCategory={dashboard.totalExpensePerCategory}

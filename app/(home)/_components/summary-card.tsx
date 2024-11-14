@@ -19,19 +19,35 @@ const SummaryCard = async ({
   const userCanAddTransactions = await canUserAddTransaction();
   return (
     <Card
-      className={`items-center${size === "large" ? "bg-[white] bg-opacity-5" : "transition-all ease-in-out hover:scale-105 hover:bg-[white] hover:bg-opacity-5"}`}
+      className={`flex flex-col items-center sm:items-center md:items-stretch lg:items-stretch ${
+        size === "large"
+          ? "w-full bg-[white] bg-opacity-5 sm:w-[300px] md:w-full lg:w-full"
+          : "w-full transition-all ease-in-out hover:scale-105 hover:bg-[white] hover:bg-opacity-5 sm:w-[150px] md:w-[180px] lg:w-full"
+      }`}
     >
-      <CardHeader className="flex-row items-center gap-4">
-        {icon}
+      <CardHeader className="flex items-center gap-4 md:items-start lg:items-start">
+        <div
+          className={`${size === "large" ? "text-4xl" : "text-2xl"} sm:text-3xl md:text-4xl lg:text-5xl`}
+        >
+          {icon}
+        </div>
         <p
-          className={`${size === "small" ? "text-muted-foreground" : "text-white opacity-70"}`}
+          className={`${
+            size === "small"
+              ? "text-sm text-muted-foreground sm:text-base"
+              : "text-base text-white opacity-70 sm:text-lg md:text-xl"
+          }`}
         >
           {title}
         </p>
       </CardHeader>
-      <CardContent className="flex justify-between">
+      <CardContent className="flex flex-col items-center justify-between gap-2 sm:flex-row sm:gap-4">
         <p
-          className={`font-bold ${size === "small" ? "text-2xl" : "text-4xl"}`}
+          className={`font-bold ${
+            size === "small"
+              ? "sm:text-md text-lg md:text-2xl"
+              : "text-xl sm:text-sm md:text-4xl"
+          }`}
         >
           {Intl.NumberFormat("pt-BR", {
             style: "currency",
@@ -40,9 +56,11 @@ const SummaryCard = async ({
         </p>
 
         {size === "large" && (
-          <AddTransactionButton
-            userCanAddTransactions={userCanAddTransactions}
-          />
+          <div className="w-full sm:w-auto">
+            <AddTransactionButton
+              userCanAddTransactions={userCanAddTransactions}
+            />
+          </div>
         )}
       </CardContent>
     </Card>

@@ -21,25 +21,29 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
     }
     return "text-white";
   };
+
   const getAmountPrefix = (transaction: Transaction) => {
     if (transaction.type === TransactionType.DEPOSIT) {
       return "+";
     }
     return "-";
   };
+
   return (
-    <ScrollArea className="rounded-md border">
+    <ScrollArea className="max-h-[695px] overflow-y-auto rounded-md border">
       <CardHeader className="flex-row items-center justify-between">
         <CardTitle className="font-bold">Últimas Transações</CardTitle>
         <Button variant="outline" className="rounded-full font-bold" asChild>
-          <Link href="/transactions">Ver mais</Link>
+          <Link href="/transactions" aria-label="Ver todas as transações">
+            Ver mais
+          </Link>
         </Button>
       </CardHeader>
       <CardContent className="space-y-6">
         {lastTransactions.map((transaction) => (
           <div
             key={transaction.id}
-            className="flex items-center justify-between"
+            className="flex items-center justify-between border-b border-muted p-3"
           >
             <div className="flex items-center gap-3">
               <div className="rounded-lg bg-white bg-opacity-[3%] p-3 text-white">
@@ -47,7 +51,7 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
                   src={`/${TransactionPaymentMethodIcons[transaction.paymentMethod]}`}
                   height={20}
                   width={20}
-                  alt="Icon"
+                  alt="Ícone de método de pagamento"
                 />
               </div>
               <div>

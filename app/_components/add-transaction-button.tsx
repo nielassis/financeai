@@ -26,12 +26,12 @@ const AddTransactionButton = ({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              className="rounded-full font-bold"
+              className="flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-bold md:px-6 md:py-3 md:text-base"
               onClick={() => setDialogIsOpen(true)}
               disabled={!userCanAddTransactions}
             >
               Adicionar transação
-              <ArrowDownUpIcon />
+              <ArrowDownUpIcon className="h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </TooltipTrigger>
           <TooltipContent>
