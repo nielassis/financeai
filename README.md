@@ -7,7 +7,7 @@
 </div>
 
 <div align=center>
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" />
+  <img src="https://img.shields.io/badge/Status-Concluido-green" />
 </div>
 
 ### ✅ Visão Geral do Projeto
@@ -22,9 +22,8 @@ Muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais de ma
 - [x] Gereciamento de transações
 - [x] Suporte a múltiplos usuários
 - [x] Vizualização de dados aprimorada com gráficos (ShadcnUI)
-- [ ] Integração com IA
-- [ ] Implementação de planos e assinatura com stripe
-- [ ] Deploy
+- [x] Implementação de planos e assinatura com stripe
+- [x] Deploy
 
 ### 💻 Screens
 
