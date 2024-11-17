@@ -34,7 +34,7 @@ Muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais de ma
   </tr>
   <tr>
     <td><img src="./public/readme/loginScreen.jpeg" width="300" /></td>
-    <td><img src="./public/readme/dashboardScreen.jpeg" width="300" /></td>
+    <td><img src="./public/readme/dashboard.png" width="300" /></td>
   </tr>
   <tr>
     <td align="center">Transações</td>
